@@ -1,0 +1,20 @@
+.tableHeader {
+    text-align: left;
+}
+
+.productPrice {
+    text-align: right;
+}
+
+.subTotal {
+    text-align: right;
+}
+
+#totalCost {
+    text-align: right;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
