@@ -4,11 +4,12 @@ function updateTable(){
     let subtotals = document.getElementsByClassName('subTotal');
     let total = document.getElementsByClassName('totalCost');
 
-    let totalFloat = 0; //Has to be reset to zero every time the function runs.
+    let totalFloat = 0;
 
     for(i = 0;i < subtotals.length;i++){
-        subtotals[i].innerText = parseInt(quantity[i].value)*parseFloat(prices[i].innerText);
+        subtotals[i].innerText = (parseInt(quantity[i].value) * parseFloat(prices[i].innerText)).toFixed(2);
         totalFloat += parseFloat(subtotals[i].innerText);
         }
-    total[0].innerHTML = totalFloat;    
+        
+    total[0].innerHTML = totalFloat.toFixed(2);    
 }
