@@ -7,33 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="scripts.js"></script>
-    
     <table>
         <tr>
-            <th class = tableHeader>
+            <th class="tableheader">
                 Product
             </th>
-            <th class = tableHeader>
+            <th class="tableheader">
                 Prijs
             </th>
-            <th class = tableHeader>
+            <th class="tableheader">
                 Aantal
             </th>
-            <th class = tableHeader>
+            <th class="tableheader">
                 Subtotaal
             </th>
         </tr>  
         <tr>
             <td>
                 Brood</td>
-            <td class = "productPrice">
+            <td class="productPrice">
                 1.00
             </td>
             <td>
-                <input class = "productQuantity">
+                <input type="number" value="0" min="0" class="productQuantity" onchange="updateTable()" >
             </td>
-            <td class = "subTotal">
+            <td class="subTotal">
                 0
             </td>
         </tr>
@@ -41,13 +39,13 @@
             <td>
                 Brocolli
             </td>
-            <td class = "productPrice">
+            <td class="productPrice">
                 0.99
             </td>
             <td>
-                <input class = "productQuantity">
+                <input type="number" value="0" min="0" class="productQuantity" onchange="updateTable();">
             </td>
-            <td class = "subTotal">
+            <td class="subTotal">
                 0
             </td>
         </tr>
@@ -55,13 +53,13 @@
             <td>
                 Krentenbollen
             </td>
-            <td class = "productPrice">
+            <td class="productPrice">
                 1.20
             </td>
             <td>
-                <input class = "productQuantity">
+                <input type="number" value="0" min="0" class="productQuantity" onchange="updateTable();">
             </td>
-            <td class = "subTotal">
+            <td class="subTotal">
                 0
             </td>
         </tr>
@@ -69,13 +67,13 @@
             <td>
                 Brood
             </td>
-            <td class = "productPrice">
+            <td class="productPrice">
                 2.99
             </td>
             <td>
-                <input class = "productQuantity">
+                <input type="number" value="0" min="0" class="productQuantity" onchange="updateTable()";>
             </td>
-            <td class = "subTotal">
+            <td class="subTotal">
                 0
             </td>
         </tr>
@@ -88,9 +86,7 @@
             </td>
 
         </tr>
-
-
-
   </table>
+  <script src="scripts.js"></script>
 </body>
 </html>
