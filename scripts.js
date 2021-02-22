@@ -1,9 +1,9 @@
-function updateTable(){
-    let prices = document.getElementsByClassName('productPrice');
-    let quantity = document.getElementsByClassName('productQuantity');
-    let subtotals = document.getElementsByClassName('subTotal');
-    let total = document.getElementsByClassName('totalCost');
+const prices = document.getElementsByClassName('productPrice');
+const quantity = document.getElementsByClassName('productQuantity');
+const subtotals = document.getElementsByClassName('subTotal');
+const total = document.getElementsByClassName('totalCost');
 
+function updateTable(){
     let totalFloat = 0;
 
     for(i = 0;i < subtotals.length;i++){
